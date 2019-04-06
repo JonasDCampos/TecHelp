@@ -1,0 +1,152 @@
+html{
+overflow-y:hidden;
+overflow-x:hidden;
+}
+body {
+  margin: 0;
+  font-family: 'Futura MD BT', sans-serif;
+  background: #CFF5EE;
+}
+.menu {
+  font-weight: 100;
+  background: #efefef;
+  width: 150px;
+  height: 100%;
+  padding-left: 50px;
+  position: fixed;
+  z-index: 100;
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  right: -130px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  color: #034F50;
+  background: #f1ffff;
+}
+.menu:hover, .menu:focus {
+  transform: translate3d(-130px, 0, 0);
+  animation-timing-function: 1s ease-in;
+}
+.menu .title {
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: rotate(270deg);
+  left: 10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+.menu .nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 100;
+}
+.menu .nav li {
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+.menu .nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.menu .nav li a:hover {
+  color: #034F50;
+}
+.intro {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+  color: #034F50;
+  text-shadow: 1px 2px #50A5A6;
+}
+
+.body {
+  position: absolute;
+  width: 30%;
+  min-width: 300px;
+  left: 0;
+  right: 100px;
+  height: 80vh;
+  margin: 20vh auto 0;
+  background: #92D1C8;
+  text-align: center;
+  box-shadow: 0 0 0 0 #034F50 inset, 0.2em 0.1em 0 0 #bbb;
+  border: 0.5em solid #034F50;
+  padding: 0.8em;
+  color: #282828;
+
+
+}
+h1 {
+  color: white;
+}
+.task {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+.abstract, .details {
+  width: 90%;
+  padding: 15px 22px;
+  position: relative;
+  border: 2px solid #034F50;
+  background: rgba(255, 255, 255, 1);
+  background: #CFF5EE;
+}
+
+.map {
+  bottom: 5%;
+  position: absolute;
+  width: 45%;
+  min-width: 250px;
+  left: 0;
+  right: 100px;
+  height: 76vh;
+  margin: 20vh auto 0;
+  background: #92D1C8;
+  text-align: center;
+  box-shadow: 0 0 0 0 #034F50 inset, 0.2em 0.1em 0 0 #bbb;
+  border: 0.5em solid #034F50;
+  padding: 0.8em;
+  color: #282828;
+}
+.mapouter {
+position: relative;
+text-align: right;
+height:500px;
+width:600px;
+}
+.gmap_canvas {
+overflow:hidden;
+background:none!important;
+height:500px;
+width:600px;
+}
+.titulo {
+  top: 5%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 100px;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+  color: #034F50;
+  text-shadow: 1px 2px #50A5A6;
+}

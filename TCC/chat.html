@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Página Inicial</title>
+
+	<link rel="stylesheet" type="text/css" href="config.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+
+<body>
+	<div class="menu">
+    <div class="title">MENU</div>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chat.html">Suporte</a></li>
+      <li><a href="local.html">Localização</a></li>
+      <li><a href="about.html">Sobre</a></li>
+    </ul>
+</div>
+</head>
+
+<div class="task">
+  <script type='text/javascript' data-cfasync='false'>
+    window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; 
+    (function () { var done = false; var script = document.createElement('script'); 
+    script.async = true;
+    script.type = 'text/javascript';
+    script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+    document.getElementsByTagName('HEAD').item(0).appendChild(script);
+    script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '79f19f66-c101-4f6e-b76f-f31d45d9fbfc', f: true });
+    done = true;
+    } };
+    })();
+  </script>
+</div>
+</body>
+</html>
